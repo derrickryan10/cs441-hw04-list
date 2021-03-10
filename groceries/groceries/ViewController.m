@@ -12,6 +12,7 @@
 @end
 
 @implementation ViewController
+
 @synthesize tableView, items, textField;
 
 - (void)viewDidLoad {
@@ -19,24 +20,32 @@
     [tableView setDataSource: self];
     [tableView setDelegate: self];
     items = [[NSMutableArray alloc] init];
-    [items addObject:@"Grocery List"];
     [tableView reloadData];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [[UITableViewCell alloc] init];
     [[cell textLabel] setText:[items objectAtIndex:[indexPath row]]];
     return cell;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [items count];
 }
 
-- (IBAction)addItem: (id)sender{
+-(IBAction)addItem:(id)sender{
     NSString *s = [textField text];
     [items addObject:s];
     [textField setText:@""];
+    [tableView reloadData];
+}
+
+-(IBAction)toggleEdit:(id)sender{
+    [tableView setEditing:![tableView isEditing]];
+}
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    [items removeObjectAtIndex:[indexPath row]];
     [tableView reloadData];
 }
 
