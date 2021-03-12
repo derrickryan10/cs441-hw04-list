@@ -26,6 +26,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [[UITableViewCell alloc] init];
     [[cell textLabel] setText:[items objectAtIndex:[indexPath row]]];
+    cell.imageView.image = [UIImage imageNamed:@"food.jpg"];
     return cell;
 }
 

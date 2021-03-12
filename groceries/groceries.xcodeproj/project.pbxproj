@@ -14,6 +14,8 @@
 		4997947D25F801280021A446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4997947C25F801280021A446 /* Assets.xcassets */; };
 		4997948025F801280021A446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4997947E25F801280021A446 /* LaunchScreen.storyboard */; };
 		4997948325F801280021A446 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4997948225F801280021A446 /* main.m */; };
+		49C0B98425FBB7B10054DECF /* apple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49C0B98325FBB7B10054DECF /* apple.jpg */; };
+		49C0B98725FBBB040054DECF /* food.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49C0B98625FBBB040054DECF /* food.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		4997947F25F801280021A446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4997948125F801280021A446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4997948225F801280021A446 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		49C0B98325FBB7B10054DECF /* apple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = apple.jpg; sourceTree = "<group>"; };
+		49C0B98625FBBB040054DECF /* food.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				4997947425F801250021A446 /* SceneDelegate.m */,
 				4997947625F801250021A446 /* ViewController.h */,
 				4997947725F801250021A446 /* ViewController.m */,
+				49C0B98625FBBB040054DECF /* food.jpg */,
+				49C0B98325FBB7B10054DECF /* apple.jpg */,
 				4997947925F801250021A446 /* Main.storyboard */,
 				4997947C25F801280021A446 /* Assets.xcassets */,
 				4997947E25F801280021A446 /* LaunchScreen.storyboard */,
@@ -133,7 +139,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4997948025F801280021A446 /* LaunchScreen.storyboard in Resources */,
+				49C0B98725FBBB040054DECF /* food.jpg in Resources */,
 				4997947D25F801280021A446 /* Assets.xcassets in Resources */,
+				49C0B98425FBB7B10054DECF /* apple.jpg in Resources */,
 				4997947B25F801250021A446 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
