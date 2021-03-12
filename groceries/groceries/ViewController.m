@@ -23,6 +23,7 @@
     [tableView reloadData];
 }
 
+//cell
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [[UITableViewCell alloc] init];
     [[cell textLabel] setText:[items objectAtIndex:[indexPath row]]];
@@ -30,10 +31,12 @@
     return cell;
 }
 
+//number of rows
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [items count];
 }
 
+//add item
 -(IBAction)addItem:(id)sender{
     NSString *s = [textField text];
     [items addObject:s];
@@ -41,10 +44,12 @@
     [tableView reloadData];
 }
 
+//edit toggle
 -(IBAction)toggleEdit:(id)sender{
     [tableView setEditing:![tableView isEditing]];
 }
 
+//edit remove
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     [items removeObjectAtIndex:[indexPath row]];
     [tableView reloadData];
